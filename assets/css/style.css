@@ -334,15 +334,6 @@ footer .line {
     flex: auto;
 }
 
-.fb-post-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-  .fb-post {
-    width:30%;
-}
-
 
 
 /* Untuk form Daftar*/
