@@ -56,8 +56,8 @@
   background-color: #73962a;
   color: white;
   color: #fff;
-  font-family: Inter;
-  font-size: 30px;
+  font-family: var(--font-base);
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
