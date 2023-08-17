@@ -22,6 +22,14 @@
   margin-bottom: 10px;
 }
 
+.carousel-image {
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 10px !important;
+}
+
 .secondary-image {
   display: flex;
   justify-content: space-between;
