@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/produk.css">
     <link rel="icon" href="assets/images/image 1.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/image 1.png" type="image/x-icon">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar">
     
@@ -25,8 +27,44 @@
 
     
     <!-- Product 1 -->
-      <div class="content-product">
-        <div class="product-image">
+      <div class="content-product d-flex">
+        <!-- NOTE MAKE SURE THE ID IS DIFFRENT BETWEEN EACH CAROUSEL -->
+        <div id="productCarousel" class="carousel slide product-image">
+           <!-- WANT MORE CAROUSEL READ NOTE BELOW -->
+           <div class="carousel-indicators">
+            <!-- MAKE SURE TO ADD NEW BUTTON EG aria-label="Slide 5" data-bs-slide-to="4"
+            THIS "data-bs-slide-to" IS USING ARRAY -->
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image"/>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image"/>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Below is the old image display -->
+        <!-- <div class="product-image">
           <div class="main-image">
             <img src="./assets/images/produk.png" alt="produk" />
           </div>
@@ -44,7 +82,8 @@
               <img src="./assets/images/produk.png" alt="produk" />
             </div>
           </div>
-        </div>
+        </div> -->
+        
         <div class="product-detail">
           <div class="text-product-detail px-2">
             <h1>Produk Alami</h1>
@@ -55,12 +94,46 @@
               ipsum ante euismod ut et orci lacus.
             </p>
           </div>
-          <button class="buy-btn mx-auto">Beli sekarang</button>
+          <button class="buy-btn mx-auto fw-bold">Beli Sekarang</button>
         </div>
       </div>
       <!-- product-content -->
       <div class="content-product">
-        <div class="product-image">
+        <!-- NOTE MAKE SURE THE ID IS DIFFRENT BETWEEN EACH CAROUSEL -->
+        <div id="productCarousel2" class="carousel slide product-image">
+          <!-- WANT MORE CAROUSEL READ NOTE BELOW -->
+          <div class="carousel-indicators">
+            <!-- MAKE SURE TO ADD NEW BUTTON EG aria-label="Slide 5" data-bs-slide-to="4"
+            THIS "data-bs-slide-to" IS USING ARRAY -->
+            <button type="button" data-bs-target="#productCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#productCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#productCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#productCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image" />
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image"/>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/produk.png" alt="produk" class="carousel-image"/>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <div class="product-image">
           <div class="main-image">
             <img src="./assets/images/produk.png" alt="produk" />
           </div>
@@ -78,7 +151,7 @@
               <img src="./assets/images/produk.png" alt="produk" />
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="product-detail">
           <div class="text-product-detail px-2">
             <h1>Produk Alami</h1>
@@ -89,7 +162,7 @@
               ipsum ante euismod ut et orci lacus.
             </p>
           </div>
-          <button class="buy-btn mx-auto">Beli sekarang</button>
+          <button class="buy-btn mx-auto fw-bold">Beli Sekarang</button>
         </div>
       </div>
     </div>
