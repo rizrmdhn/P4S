@@ -109,7 +109,7 @@ img {
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/hero.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/hero.svg);
     background-position: center;
     background-size: cover;
 }
@@ -189,7 +189,7 @@ img {
 
 /* COUNTER */
 #counter {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.1), rgba(var(--c-brand-rgb), 0.5)), url(../images/bgas.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.1), rgba(var(--c-brand-rgb), 0.5)), url(../images/bgas.svg);
     background-position: center;
     background-size: cover;
 }
